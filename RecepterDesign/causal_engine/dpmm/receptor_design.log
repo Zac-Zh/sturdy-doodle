@@ -1,0 +1,8 @@
+2025-03-04 16:47:07,460 - ReceptorDesignPipeline - INFO - Checking required packages...
+2025-03-04 16:47:07,464 - ReceptorDesignPipeline - INFO - Installing missing packages: biopython, pyyaml
+2025-03-04 16:47:08,210 - ReceptorDesignPipeline - INFO - Required packages installed successfully
+2025-03-04 16:47:08,213 - ReceptorDesignPipeline - INFO - Optional packages not found: pyro-ppl
+2025-03-04 16:47:08,214 - ReceptorDesignPipeline - INFO - The pipeline will attempt to run without these packages, but some features may be limited
+2025-03-04 16:47:08,215 - ReceptorDesignPipeline - INFO - Missing data files: data/sequences/gpcr_class_a.fasta, data/sequences/cytokine_receptors.fasta, data/sequences/ion_channels.fasta, data/expert_knowledge/receptor_domain_causal_priors.json
+2025-03-04 16:47:08,224 - ReceptorDesignPipeline - INFO - Running data download script...
+2025-03-04 16:47:08,225 - ReceptorDesignPipeline - ERROR - Download script not found: scripts/download_data.py

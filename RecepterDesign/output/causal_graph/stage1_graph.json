@@ -1,0 +1,25 @@
+{
+  "nodes": [
+    "binding_domain",
+    "stability",
+    "expression",
+    "function"
+  ],
+  "edges": [
+    {
+      "source": "binding_domain",
+      "target": "function",
+      "weight": 0.85
+    },
+    {
+      "source": "stability",
+      "target": "expression",
+      "weight": 0.7
+    },
+    {
+      "source": "expression",
+      "target": "function",
+      "weight": 0.6
+    }
+  ]
+}

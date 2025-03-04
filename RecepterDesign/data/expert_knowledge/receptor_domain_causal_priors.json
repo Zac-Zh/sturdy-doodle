@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "description": "Expert knowledge priors for receptor domain causal relationships",
+    "version": "1.0",
+    "date": "2025-03-04"
+  },
+  "nodes": [
+    {
+      "id": "binding_pocket",
+      "type": "structural",
+      "description": "The binding pocket structure of the receptor"
+    },
+    {
+      "id": "transmembrane_domain",
+      "type": "structural",
+      "description": "Transmembrane domain of the receptor"
+    },
+    {
+      "id": "n_terminus",
+      "type": "structural",
+      "description": "N-terminus of the receptor"
+    },
+    {
+      "id": "c_terminus",
+      "type": "structural",
+      "description": "C-terminus of the receptor"
+    },
+    {
+      "id": "binding_affinity",
+      "type": "functional",
+      "description": "Binding affinity to target ligand"
+    },
+    {
+      "id": "specificity",
+      "type": "functional",
+      "description": "Specificity of binding"
+    },
+    {
+      "id": "stability",
+      "type": "biophysical",
+      "description": "Thermal and conformational stability"
+    },
+    {
+      "id": "expression",
+      "type": "biophysical",
+      "description": "Expression level in host organism"
+    },
+    {
+      "id": "signaling",
+      "type": "functional",
+      "description": "Signaling capability after binding"
+    }
+  ],
+  "edges": [
+    {
+      "source": "binding_pocket",
+      "target": "binding_affinity",
+      "confidence": 0.9,
+      "mechanism": "direct"
+    },
+    {
+      "source": "binding_pocket",
+      "target": "specificity",
+      "confidence": 0.85,
+      "mechanism": "direct"
+    },
+    {
+      "source": "transmembrane_domain",
+      "target": "stability",
+      "confidence": 0.8,
+      "mechanism": "direct"
+    },
+    {
+      "source": "n_terminus",
+      "target": "expression",
+      "confidence": 0.7,
+      "mechanism": "direct"
+    },
+    {
+      "source": "c_terminus",
+      "target": "signaling",
+      "confidence": 0.75,
+      "mechanism": "direct"
+    },
+    {
+      "source": "stability",
+      "target": "expression",
+      "confidence": 0.65,
+      "mechanism": "indirect"
+    },
+    {
+      "source": "binding_affinity",
+      "target": "signaling",
+      "confidence": 0.6,
+      "mechanism": "indirect"
+    },
+    {
+      "source": "transmembrane_domain",
+      "target": "signaling",
+      "confidence": 0.55,
+      "mechanism": "indirect"
+    }
+  ]
+}

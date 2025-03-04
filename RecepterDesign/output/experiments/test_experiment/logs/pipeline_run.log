@@ -1,0 +1,9 @@
+[2025-03-04T16:44:28.884538] INFO: Starting Stage 1: Dynamic Causal Inference Engine
+[2025-03-04T16:44:28.920207] ERROR: Pipeline failed: 'DiGraph' object has no attribute 'update_with_experiment'
+[2025-03-04T16:49:46.443420] INFO: Starting Stage 1: Dynamic Causal Inference Engine
+[2025-03-04T16:49:46.462669] ERROR: Pipeline failed: 'DiGraph' object has no attribute 'update_with_experiment'
+[2025-03-04T16:51:17.296715] INFO: Starting Stage 1: Dynamic Causal Inference Engine
+[2025-03-04T16:51:17.362424] ERROR: Pipeline failed: 'DiGraph' object has no attribute 'update_with_experiment'
+[2025-03-04T16:52:10.924854] INFO: Starting Stage 1: Dynamic Causal Inference Engine
+[2025-03-04T16:52:10.981794] INFO: Starting Stage 2: Hierarchical Generative Optimization
+[2025-03-04T16:52:11.036168] INFO: Starting Stage 3: Closed Loop Validation

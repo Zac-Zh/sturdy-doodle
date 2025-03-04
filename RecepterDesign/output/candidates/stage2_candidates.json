@@ -1,0 +1,42 @@
+[
+  {
+    "id": "receptor0",
+    "sequence": "WRRHNFGRSGYRPYGMKIWQ"
+  },
+  {
+    "id": "receptor1",
+    "sequence": "HGECNSVWMMTERQAVHSNF"
+  },
+  {
+    "id": "receptor2",
+    "sequence": "CHWRWPKYYRCINYHCEYPC"
+  },
+  {
+    "id": "receptor3",
+    "sequence": "TPIKNPHPKGTTTQDFACQG"
+  },
+  {
+    "id": "receptor4",
+    "sequence": "KQQHTEAVVLHDCLKHTYVW"
+  },
+  {
+    "id": "receptor5",
+    "sequence": "ASPSCIMMCWTRMLHPNPDA"
+  },
+  {
+    "id": "receptor6",
+    "sequence": "MNPYDFCDKIPIDANWVHTG"
+  },
+  {
+    "id": "receptor7",
+    "sequence": "DEQYMYGYTGPDNLAPHNRD"
+  },
+  {
+    "id": "receptor8",
+    "sequence": "TSCFPNVDCTHIYFDDHMWV"
+  },
+  {
+    "id": "receptor9",
+    "sequence": "YNRVRCTNRFLARHRHSECY"
+  }
+]

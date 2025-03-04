@@ -1,0 +1,17 @@
+Receptor Design Pipeline Execution Report
+=======================================
+
+Experiment: test_experiment
+Date: 2025-03-04 16:52:11
+
+Summary:
+- Stage 1 (Dynamic Causal Inference): Completed
+- Stage 2 (Hierarchical Generation): Completed
+- Stage 3 (Closed Loop Validation): Completed
+
+Results:
+- Generated receptor candidates: 2
+- Best binding affinity score: 0.85
+- Best stability score: 0.92
+
+This is a placeholder report for testing purposes.

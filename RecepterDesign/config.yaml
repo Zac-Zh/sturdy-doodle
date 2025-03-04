@@ -1,0 +1,35 @@
+# Configuration for Receptor Design Pipeline
+
+# Basic experiment settings
+experiment_name: "test_experiment"
+output_dir: "./output"
+
+# Prior knowledge settings
+prior_knowledge:
+  graph_path: "data/expert_knowledge/receptor_domain_causal_priors.json"
+
+# Causal engine settings
+causal_engine:
+  lambda_complexity: 0.1
+  max_iterations: 100
+  learning_rate: 0.01
+
+# Generative model settings
+generative_model:
+  latent_dim: 128
+  hidden_layers: [256, 128]
+  learning_rate: 0.0005
+  batch_size: 64
+  epochs: 10
+
+# Validation settings
+validation:
+  host_organism: "human"
+  expression_system: "ecoli"
+  stability_threshold: 0.7
+  binding_affinity_threshold: 0.8
+
+# External tools
+tools:
+  alphafold_path: ""  # Leave empty if not available
+  gromacs_path: ""    # Leave empty if not available

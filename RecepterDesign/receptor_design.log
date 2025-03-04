@@ -1,0 +1,137 @@
+2025-03-04 11:32:33,103 - ReceptorDesignPipeline - INFO - Checking required packages...
+2025-03-04 11:32:33,110 - ReceptorDesignPipeline - INFO - Installing missing packages: biopython, pyyaml
+2025-03-04 11:32:35,109 - ReceptorDesignPipeline - INFO - Required packages installed successfully
+2025-03-04 11:32:35,112 - ReceptorDesignPipeline - INFO - Optional packages not found: pyro-ppl, pymc3
+2025-03-04 11:32:35,112 - ReceptorDesignPipeline - INFO - The pipeline will attempt to run without these packages, but some features may be limited
+2025-03-04 11:32:35,113 - ReceptorDesignPipeline - INFO - All required data files are present
+2025-03-04 11:32:35,113 - ReceptorDesignPipeline - INFO - Created init file: causal_engine\__init__.py
+2025-03-04 11:32:35,115 - ReceptorDesignPipeline - INFO - Created init file: generative_model\__init__.py
+2025-03-04 11:32:35,115 - ReceptorDesignPipeline - INFO - Created init file: validation\__init__.py
+2025-03-04 11:32:35,116 - ReceptorDesignPipeline - INFO - Starting receptor design pipeline with config: config.yaml
+2025-03-04 16:41:21,478 - ReceptorDesignPipeline - INFO - Checking required packages...
+2025-03-04 16:41:21,483 - ReceptorDesignPipeline - INFO - Installing missing packages: biopython, pyyaml
+2025-03-04 16:41:22,271 - ReceptorDesignPipeline - INFO - Required packages installed successfully
+2025-03-04 16:41:22,274 - ReceptorDesignPipeline - INFO - Optional packages not found: pyro-ppl
+2025-03-04 16:41:22,274 - ReceptorDesignPipeline - INFO - The pipeline will attempt to run without these packages, but some features may be limited
+2025-03-04 16:41:22,280 - ReceptorDesignPipeline - INFO - All required data files are present
+2025-03-04 16:41:22,284 - ReceptorDesignPipeline - INFO - Starting receptor design pipeline with config: config.yaml
+2025-03-04 16:44:28,059 - ReceptorDesignPipeline - INFO - Checking required packages...
+2025-03-04 16:44:28,061 - ReceptorDesignPipeline - INFO - Installing missing packages: biopython, pyyaml
+2025-03-04 16:44:28,833 - ReceptorDesignPipeline - INFO - Required packages installed successfully
+2025-03-04 16:44:28,836 - ReceptorDesignPipeline - INFO - Optional packages not found: pyro-ppl
+2025-03-04 16:44:28,837 - ReceptorDesignPipeline - INFO - The pipeline will attempt to run without these packages, but some features may be limited
+2025-03-04 16:44:28,844 - ReceptorDesignPipeline - INFO - All required data files are present
+2025-03-04 16:44:28,849 - ReceptorDesignPipeline - INFO - Starting receptor design pipeline with config: config.yaml
+2025-03-04 16:44:28,873 - ReceptorDesignPipeline - INFO - Initializing pipeline components
+2025-03-04 16:44:28,873 - ReceptorDesignPipeline - INFO - Components will be initialized as needed during pipeline execution
+2025-03-04 16:44:28,873 - ReceptorDesignPipeline - INFO - Pipeline initialized with config from config.yaml
+2025-03-04 16:44:28,884 - ReceptorDesignPipeline - INFO - Starting Stage 1: Dynamic Causal Inference Engine
+2025-03-04 16:44:28,912 - ReceptorDesignPipeline - WARNING - Could not initialize some Stage 1 components: No module named 'causal_engine.bayesian_graph'
+2025-03-04 16:44:28,912 - ReceptorDesignPipeline - WARNING - Pipeline will run with limited functionality
+2025-03-04 16:44:28,916 - ReceptorDesignPipeline - INFO - Loaded prior knowledge graph with 9 nodes and 8 edges
+2025-03-04 16:44:28,916 - ReceptorDesignPipeline - INFO - Initializing causal optimizer with prior graph
+2025-03-04 16:44:28,917 - ReceptorDesignPipeline - INFO - Loading experimental data
+2025-03-04 16:44:28,917 - ReceptorDesignPipeline - INFO - Updating causal graph with experimental data...
+2025-03-04 16:44:28,917 - ReceptorDesignPipeline - ERROR - Pipeline execution failed: 'DiGraph' object has no attribute 'update_with_experiment'
+Traceback (most recent call last):
+  File "/mnt/d/Code/RecepterDesign/main.py", line 196, in run
+    self._stage1_dynamic_causal_inference()
+  File "/mnt/d/Code/RecepterDesign/main.py", line 248, in _stage1_dynamic_causal_inference
+    updated_graph = self.causal_optimizer.update_with_experiment(exp_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DiGraph' object has no attribute 'update_with_experiment'
+2025-03-04 16:49:45,694 - ReceptorDesignPipeline - INFO - Checking required packages...
+2025-03-04 16:49:45,698 - ReceptorDesignPipeline - INFO - Installing missing packages: biopython, pyyaml
+2025-03-04 16:49:46,402 - ReceptorDesignPipeline - INFO - Required packages installed successfully
+2025-03-04 16:49:46,405 - ReceptorDesignPipeline - INFO - Optional packages not found: pyro-ppl
+2025-03-04 16:49:46,405 - ReceptorDesignPipeline - INFO - The pipeline will attempt to run without these packages, but some features may be limited
+2025-03-04 16:49:46,412 - ReceptorDesignPipeline - INFO - All required data files are present
+2025-03-04 16:49:46,416 - ReceptorDesignPipeline - INFO - Starting receptor design pipeline with config: config.yaml
+2025-03-04 16:49:46,435 - ReceptorDesignPipeline - INFO - Initializing pipeline components
+2025-03-04 16:49:46,436 - ReceptorDesignPipeline - INFO - Components will be initialized as needed during pipeline execution
+2025-03-04 16:49:46,436 - ReceptorDesignPipeline - INFO - Pipeline initialized with config from config.yaml
+2025-03-04 16:49:46,443 - ReceptorDesignPipeline - INFO - Starting Stage 1: Dynamic Causal Inference Engine
+2025-03-04 16:49:46,456 - ReceptorDesignPipeline - WARNING - Could not initialize some Stage 1 components: No module named 'causal_engine.bayesian_graph'
+2025-03-04 16:49:46,456 - ReceptorDesignPipeline - WARNING - Pipeline will run with limited functionality
+2025-03-04 16:49:46,459 - ReceptorDesignPipeline - INFO - Loaded prior knowledge graph with 9 nodes and 8 edges
+2025-03-04 16:49:46,459 - ReceptorDesignPipeline - INFO - Initializing causal optimizer with prior graph
+2025-03-04 16:49:46,459 - ReceptorDesignPipeline - INFO - Loading experimental data
+2025-03-04 16:49:46,460 - ReceptorDesignPipeline - INFO - Updating causal graph with experimental data...
+2025-03-04 16:49:46,460 - ReceptorDesignPipeline - ERROR - Pipeline execution failed: 'DiGraph' object has no attribute 'update_with_experiment'
+Traceback (most recent call last):
+  File "/mnt/d/Code/RecepterDesign/main.py", line 196, in run
+    self._stage1_dynamic_causal_inference()
+  File "/mnt/d/Code/RecepterDesign/main.py", line 248, in _stage1_dynamic_causal_inference
+    updated_graph = self.causal_optimizer.update_with_experiment(exp_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DiGraph' object has no attribute 'update_with_experiment'
+2025-03-04 16:51:16,422 - ReceptorDesignPipeline - INFO - Checking required packages...
+2025-03-04 16:51:16,425 - ReceptorDesignPipeline - INFO - Installing missing packages: biopython, pyyaml
+2025-03-04 16:51:17,251 - ReceptorDesignPipeline - INFO - Required packages installed successfully
+2025-03-04 16:51:17,255 - ReceptorDesignPipeline - INFO - Optional packages not found: pyro-ppl
+2025-03-04 16:51:17,255 - ReceptorDesignPipeline - INFO - The pipeline will attempt to run without these packages, but some features may be limited
+2025-03-04 16:51:17,262 - ReceptorDesignPipeline - INFO - All required data files are present
+2025-03-04 16:51:17,267 - ReceptorDesignPipeline - INFO - Starting receptor design pipeline with config: config.yaml
+2025-03-04 16:51:17,289 - ReceptorDesignPipeline - INFO - Initializing pipeline components
+2025-03-04 16:51:17,289 - ReceptorDesignPipeline - INFO - Components will be initialized as needed during pipeline execution
+2025-03-04 16:51:17,289 - ReceptorDesignPipeline - INFO - Pipeline initialized with config from config.yaml
+2025-03-04 16:51:17,296 - ReceptorDesignPipeline - INFO - Starting Stage 1: Dynamic Causal Inference Engine
+2025-03-04 16:51:17,356 - ReceptorDesignPipeline - WARNING - Could not initialize some Stage 1 components: cannot import name 'CausalGraphOptimizer' from 'causal_engine.dpmm.bayesian_graph' (/mnt/d/Code/RecepterDesign/causal_engine/dpmm/bayesian_graph.py)
+2025-03-04 16:51:17,356 - ReceptorDesignPipeline - WARNING - Pipeline will run with limited functionality
+2025-03-04 16:51:17,359 - ReceptorDesignPipeline - INFO - Loaded prior knowledge graph with 9 nodes and 8 edges
+2025-03-04 16:51:17,359 - ReceptorDesignPipeline - INFO - Initializing causal optimizer with prior graph
+2025-03-04 16:51:17,360 - ReceptorDesignPipeline - INFO - Loading experimental data
+2025-03-04 16:51:17,360 - ReceptorDesignPipeline - INFO - Updating causal graph with experimental data...
+2025-03-04 16:51:17,360 - ReceptorDesignPipeline - ERROR - Pipeline execution failed: 'DiGraph' object has no attribute 'update_with_experiment'
+Traceback (most recent call last):
+  File "/mnt/d/Code/RecepterDesign/main.py", line 196, in run
+    self._stage1_dynamic_causal_inference()
+  File "/mnt/d/Code/RecepterDesign/main.py", line 248, in _stage1_dynamic_causal_inference
+    updated_graph = self.causal_optimizer.update_with_experiment(exp_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DiGraph' object has no attribute 'update_with_experiment'
+2025-03-04 16:52:10,088 - ReceptorDesignPipeline - INFO - Checking required packages...
+2025-03-04 16:52:10,091 - ReceptorDesignPipeline - INFO - Installing missing packages: biopython, pyyaml
+2025-03-04 16:52:10,883 - ReceptorDesignPipeline - INFO - Required packages installed successfully
+2025-03-04 16:52:10,886 - ReceptorDesignPipeline - INFO - Optional packages not found: pyro-ppl
+2025-03-04 16:52:10,886 - ReceptorDesignPipeline - INFO - The pipeline will attempt to run without these packages, but some features may be limited
+2025-03-04 16:52:10,892 - ReceptorDesignPipeline - INFO - All required data files are present
+2025-03-04 16:52:10,896 - ReceptorDesignPipeline - INFO - Starting receptor design pipeline with config: config.yaml
+2025-03-04 16:52:10,917 - ReceptorDesignPipeline - INFO - Initializing pipeline components
+2025-03-04 16:52:10,917 - ReceptorDesignPipeline - INFO - Components will be initialized as needed during pipeline execution
+2025-03-04 16:52:10,918 - ReceptorDesignPipeline - INFO - Pipeline initialized with config from config.yaml
+2025-03-04 16:52:10,924 - ReceptorDesignPipeline - INFO - Starting Stage 1: Dynamic Causal Inference Engine
+2025-03-04 16:52:10,966 - causal_engine.bayesian_graph - INFO - Using fallback CausalGraphOptimizer with lambda_complexity=0.1
+2025-03-04 16:52:10,966 - ReceptorDesignPipeline - INFO - Initialized causal graph optimizer
+2025-03-04 16:52:10,966 - ReceptorDesignPipeline - WARNING - AlphaFold path not provided or invalid, some features will be limited
+2025-03-04 16:52:10,969 - ReceptorDesignPipeline - INFO - Loaded prior knowledge graph with 9 nodes and 8 edges
+2025-03-04 16:52:10,969 - ReceptorDesignPipeline - INFO - Loading experimental data
+2025-03-04 16:52:10,969 - ReceptorDesignPipeline - INFO - Updating causal graph with experimental data...
+2025-03-04 16:52:10,969 - causal_engine.bayesian_graph - INFO - Created fallback causal graph with 4 nodes and 3 edges
+2025-03-04 16:52:10,981 - ReceptorDesignPipeline - INFO - Stage 1 completed successfully
+2025-03-04 16:52:10,981 - ReceptorDesignPipeline - INFO - Starting Stage 2: Hierarchical Generative Optimization
+2025-03-04 16:52:10,987 - ReceptorDesignPipeline - INFO - Initializing simplified generative models for testing
+2025-03-04 16:52:10,996 - ReceptorDesignPipeline - INFO - Initialized simplified generative models
+2025-03-04 16:52:10,999 - ReceptorDesignPipeline - INFO - Extracting generation features from graph
+2025-03-04 16:52:10,999 - ReceptorDesignPipeline - INFO - Training local GAN for residue-level features...
+2025-03-04 16:52:11,000 - ReceptorDesignPipeline - INFO - Training local GAN
+2025-03-04 16:52:11,005 - ReceptorDesignPipeline - INFO - Training global GAN for sequence-level features...
+2025-03-04 16:52:11,005 - ReceptorDesignPipeline - INFO - Training global GAN
+2025-03-04 16:52:11,010 - ReceptorDesignPipeline - INFO - Initializing PPO agent for reinforcement learning...
+2025-03-04 16:52:11,010 - ReceptorDesignPipeline - INFO - Initializing PPO agent
+2025-03-04 16:52:11,010 - ReceptorDesignPipeline - INFO - Generating candidate receptor sequences...
+2025-03-04 16:52:11,011 - ReceptorDesignPipeline - INFO - Generating 10 candidates
+2025-03-04 16:52:11,035 - ReceptorDesignPipeline - INFO - Stage 2 completed successfully
+2025-03-04 16:52:11,035 - ReceptorDesignPipeline - INFO - Starting Stage 3: Closed Loop Validation and Adaptation
+2025-03-04 16:52:11,059 - ReceptorDesignPipeline - WARNING - Could not initialize some Stage 3 components: No module named 'validation.cai_calculator'
+2025-03-04 16:52:11,059 - ReceptorDesignPipeline - WARNING - Pipeline will run with limited functionality
+2025-03-04 16:52:11,061 - ReceptorDesignPipeline - WARNING - AlphaFold wrapper not available, skipping structure prediction
+2025-03-04 16:52:11,062 - ReceptorDesignPipeline - WARNING - GROMACS analyzer not available or no structures to analyze, skipping analysis
+2025-03-04 16:52:11,062 - ReceptorDesignPipeline - WARNING - Codon optimizer not available, skipping codon optimization
+2025-03-04 16:52:11,062 - ReceptorDesignPipeline - INFO - Updating causal graph with validation results...
+2025-03-04 16:52:11,062 - ReceptorDesignPipeline - INFO - Updating causal graph with validation results
+2025-03-04 16:52:11,082 - ReceptorDesignPipeline - INFO - Stage 3 completed successfully
+2025-03-04 16:52:11,085 - ReceptorDesignPipeline - INFO - Pipeline execution completed successfully
+2025-03-04 16:52:11,085 - ReceptorDesignPipeline - INFO - Generating pipeline execution report
+2025-03-04 16:52:11,088 - ReceptorDesignPipeline - INFO - Report generated at output/report/pipeline_report.txt
+2025-03-04 16:52:11,088 - ReceptorDesignPipeline - INFO - Pipeline execution finished successfully
